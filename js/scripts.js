@@ -8,7 +8,7 @@ function salvarNaAPI(){
     }
 
     let button = document.getElementById('btn')
-    button.disabled = "true"
+    button.disabled = true
     fetch("https://63388a25383946bc7fe9a891.mockapi.io/digital-store-users",
     {
         method: "POST",
@@ -18,7 +18,7 @@ function salvarNaAPI(){
         body: JSON.stringify(aluno)
     }
     ).then(() => {
-        button.disabled = "false"
+        button.disabled = false
         alert('Enviado com sucesso')
         document.getElementById('cadastro')
     })
