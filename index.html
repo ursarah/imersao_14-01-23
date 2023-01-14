@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <main>
+        <section id="topo">
+            <div class="logo">
+                <img src="image/Group 1.png" alt="">
+            </div>
+            <div class="conteudo">
+                <h6>Torne-se um</h6>
+                <h1>Full Stack</h1>
+                <h6>Seja um desenvolvedor com conhecimento
+                    em Front-End e Back-End</h6>
+                <p>Você aprenderá a conduzir todos os estágios de desenvolvimento de sites e apps, desde a interface até estruturas internas ou bancos de dados. Aprenda HTML5, CSS3, Javascript, React, banco de dados e outras. Torne-se um profissional completo e ganhe mais.</p>
+            </div>
+            <form id="cadastro" onsubmit="salvarNaAPI()">
+                <h3>Faça sua pré-matricula</h3>
+                <p>Chegou a hora de você transformar sua vida, garanta sua vaga preenchendo os campos abaixo agora mesmo!</p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required/>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Digite seu email" required/>
+
+                <label for="whatsapp">Whatsapp</label>
+                <input type="tel" id="whatsapp" placeholder="(00) 0 0000-0000" required/>
+                
+                <label for="objetivo">Objetivo:</label>
+                <select id="objetivo">
+                    <option value="">Escolha uma opção</option>
+                    <option value="">Mais ganho</option>
+                    <option value=""></option>
+                </select>
+                <button type="submit" id="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
